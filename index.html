@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Calculator</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <p id="error-message"></p>
+        <input
+          type="text"
+          disabled="disabled"
+          placeholder=""
+          id="display-screen"
+        />
+        <button onclick="Clear(); clearError()">CL</button>
+        <button onclick="del(); clearError() ">DEL</button>
+        <button onclick="display('%'); clearError()">%</button>
+        <button onclick="display('/'); clearError()">/</button>
+        <button onclick="display('7'); clearError()">7</button>
+        <button onclick="display('8'); clearError()">8</button>
+        <button onclick="display('9'); clearError()">9</button>
+        <button onclick="display('*'); clearError()">X</button>
+        <button onclick="display('4'); clearError()">4</button>
+        <button onclick="display('5'); clearError()">5</button>
+        <button onclick="display('6'); clearError()">6</button>
+        <button onclick="display('-'); clearError()">&#8722</button>
+        <button onclick="display('1'); clearError()">1</button>
+        <button onclick="display('2'); clearError()">2</button>
+        <button onclick="display('3'); clearError()">3</button>
+        <button onclick="display('+'); clearError()">+</button>
+        <button onclick="display('.'); clearError()" style="font-weight: bolder; padding-bottom: 10px;">.</button>
+        <button onclick="display('0'); clearError()">0</button>
+        <button class="equal-btn" onclick="Calculate()">=</button>
+      </div>
+    </div>
+  </body>
+
+  <script src="index.js"></script>
+</html>
